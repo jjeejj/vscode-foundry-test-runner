@@ -1,0 +1,92 @@
+{
+  "name": "vscode-foundry-test-runner",
+  "displayName": "Foundry Test Runner",
+  "description": "vscode foundry test runner extension",
+  "version": "0.0.1",
+  "publisher": "jjeejj",
+  "icon": "images/foundry-icon.png",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Testing",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:solidity"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.runForgeTest",
+        "title": "Run Forge Test"
+      },
+      {
+        "command": "extension.debugForgeTest",
+        "title": "Debug Forge Test"
+      }
+    ],
+    "languages": [
+      {
+        "id": "solidity",
+        "extensions": [".sol"],
+        "aliases": ["Solidity"]
+      }
+    ],
+    "configuration": {
+      "title": "Foundry Test",
+      "properties": {
+        "foundryTest.enableCodeLens": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable CodeLens for Forge tests"
+        },
+        "foundryTest.verbosityLevel": {
+          "type": "string",
+          "enum": ["-v", "-vv", "-vvv"],
+          "default": "-vv",
+          "description": "Verbosity level for forge test command"
+        },
+        "foundryTest.additionalArgs": {
+          "type": "string",
+          "default": "",
+          "description": "Additional arguments for forge test command"
+        },
+        "foundryTest.autoCloseTerminal": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically close terminal after test execution"
+        },
+        "foundryTest.closeTerminalTimeout": {
+          "type": "number",
+          "default": 5000,
+          "description": "Timeout in milliseconds before closing terminal after test execution"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjeejj/vscode-foundry-test.git"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}

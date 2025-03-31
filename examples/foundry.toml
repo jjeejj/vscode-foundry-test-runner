@@ -1,0 +1,11 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+remappings = []
+
+[rpc_endpoints]
+
+[etherscan]
+
+[fmt]
