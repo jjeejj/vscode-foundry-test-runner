@@ -1,11 +1,34 @@
 .vscode/**
 .vscode-test/**
+.vscode-test.mjs
+
+# 排除源代码，只保留编译后的文件
 src/**
+**/*.ts
+!**/*.d.ts
+**/*.map
+
+# 排除开发和测试相关文件
+examples/**
+src/test/**
+**/test/**
+**/.vscode-test.*
+
+# 排除构建和缓存文件
+**/.cache
+**/.temp
+**/node_modules
+**/out/test/**
+
+# 排除配置和文档文件
 .gitignore
+.gitmodules
 .yarnrc
-vsc-extension-quickstart.md
 **/tsconfig.json
 **/eslint.config.mjs
-**/*.map
-**/*.ts
-**/.vscode-test.*
+vsc-extension-quickstart.md
+README.zh-CN.md
+**/*.md
+!README.md
+!CHANGELOG.md
+!LICENSE
