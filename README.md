@@ -39,8 +39,6 @@ This extension contributes the following settings:
 
 * `foundryTest.verbosityLevel`: Set the verbosity level for forge test command (default: `-vvv`)
 * `foundryTest.additionalArgs`: Additional arguments to pass to the forge test command
-* `foundryTest.autoCloseTerminal`: Automatically close terminal after test execution (default: `false`)
-* `foundryTest.closeTerminalTimeout`: Timeout in milliseconds before closing terminal after test execution (default: `5000`)
 * `foundryTest.enableCodeLens`: Enable or disable CodeLens buttons next to test methods (default: enabled)
 
 ## Examples

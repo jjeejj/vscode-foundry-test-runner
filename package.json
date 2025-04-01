@@ -1,19 +1,34 @@
 {
-  "name": "vscode-foundry-test-runner",
-  "displayName": "Foundry Test Runner",
-  "description": "vscode foundry test runner extension",
+  "name": "foundry-test-runner",
+  "displayName": "Foundry Solidity Test Runner",
+  "description": "Run and debug Foundry Solidity tests directly from VSCode. Features CodeLens buttons for individual test methods in Solidity files.",
   "version": "0.0.1",
   "publisher": "jjeejj",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
   "icon": "images/foundry-icon.png",
   "engines": {
     "vscode": "^1.98.0"
   },
   "categories": [
     "Testing",
-    "Other"
+    "Programming Languages",
+    "Debuggers"
   ],
   "activationEvents": [
     "onLanguage:solidity"
+  ],
+  "keywords": [
+    "foundry",
+    "forge",
+    "testing",
+    "test-runner",
+    "debugger",
+    "development",
+    "productivity",
+    "code-quality"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -52,16 +67,6 @@
           "type": "string",
           "default": "",
           "description": "Additional arguments for forge test command"
-        },
-        "foundryTest.autoCloseTerminal": {
-          "type": "boolean",
-          "default": false,
-          "description": "Automatically close terminal after test execution"
-        },
-        "foundryTest.closeTerminalTimeout": {
-          "type": "number",
-          "default": 5000,
-          "description": "Timeout in milliseconds before closing terminal after test execution"
         }
       }
     }
@@ -78,6 +83,16 @@
     "type": "git",
     "url": "https://github.com/jjeejj/vscode-foundry-test-runner.git"
   },
+  "author": {
+    "name": "jjeejj",
+    "email": "wenjunjiang93@gmail.com",
+    "url": "https://github.com/jjeejj"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjeejj/vscode-foundry-test-runner/issues"
+  },
+  "homepage": "https://github.com/jjeejj/vscode-foundry-test-runner#readme",
   "devDependencies": {
     "@types/vscode": "^1.98.0",
     "@types/mocha": "^10.0.10",

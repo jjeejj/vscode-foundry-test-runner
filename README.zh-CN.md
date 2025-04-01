@@ -10,8 +10,6 @@
 - 一键运行单个测试方法
 - 支持调试模式运行测试
 - 自动检测Forge测试文件和测试方法
-- 测试执行完成后自动退出执行状态
-- 可配置的终端自动关闭行为
 
 ![功能演示](images/demo.png)
 
@@ -42,8 +40,6 @@
 - `foundryTest.enableCodeLens`: 启用或禁用测试方法旁的 CodeLens 按钮（默认：启用）
 - `foundryTest.verbosityLevel`：设置forge test命令的详细程度级别（默认：`-vvv`）
 - `foundryTest.additionalArgs`：传递给forge test命令的额外参数
-- `foundryTest.autoCloseTerminal`：测试执行完成后自动关闭终端（默认：`false`）
-- `foundryTest.closeTerminalTimeout`：测试执行完成后关闭终端前的超时时间（毫秒）（默认：`5000`）
 
 ## 示例
 
