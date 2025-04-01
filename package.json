@@ -1,14 +1,17 @@
 {
-  "name": "foundry-test-runner",
+  "name": "foundry-solidity-test-runner",
   "displayName": "Foundry Solidity Test Runner",
-  "description": "Run and debug Foundry Solidity tests directly from VSCode. Features CodeLens buttons for individual test methods in Solidity files.",
+  "description": "A powerful VSCode extension that enables developers to run and debug Foundry/Forge Solidity tests directly within the editor. It provides convenient CodeLens buttons next to each test method, allowing for quick execution and debugging of individual tests in Solidity files. Improves development workflow for blockchain developers using the Foundry testing framework.",
   "version": "0.0.1",
   "publisher": "jjeejj",
+  "private": false,
+  "license": "MIT",
   "galleryBanner": {
     "color": "#C80000",
     "theme": "dark"
   },
   "icon": "images/foundry-icon.png",
+  "preview": false,
   "engines": {
     "vscode": "^1.98.0"
   },
@@ -88,7 +91,6 @@
     "email": "wenjunjiang93@gmail.com",
     "url": "https://github.com/jjeejj"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jjeejj/vscode-foundry-test-runner/issues"
   },
@@ -103,5 +105,6 @@
     "typescript": "^5.8.2",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "dependencies": {}
 }

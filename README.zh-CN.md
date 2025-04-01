@@ -33,13 +33,13 @@
 2. 你将在每个测试方法旁边看到 "run test" 和 "debug test" 按钮
 3. 点击相应按钮运行或调试测试
 
-## 配置选项
+## 配置
 
-在 VSCode 设置中，你可以自定义以下选项：
+此扩展提供以下设置：
 
-- `foundryTest.enableCodeLens`: 启用或禁用测试方法旁的 CodeLens 按钮（默认：启用）
-- `foundryTest.verbosityLevel`：设置forge test命令的详细程度级别（默认：`-vvv`）
+- `foundryTest.verbosityLevel`：设置forge test命令的详细程度级别（默认：`-vv`）
 - `foundryTest.additionalArgs`：传递给forge test命令的额外参数
+- `foundryTest.enableCodeLens`: 启用或禁用测试方法旁的 CodeLens 按钮（默认：启用）
 
 ## 示例
 

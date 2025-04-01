@@ -37,7 +37,7 @@ This VSCode extension provides integration support for the Foundry/Forge testing
 
 This extension contributes the following settings:
 
-* `foundryTest.verbosityLevel`: Set the verbosity level for forge test command (default: `-vvv`)
+* `foundryTest.verbosityLevel`: Set the verbosity level for forge test command (default: `-vv`)
 * `foundryTest.additionalArgs`: Additional arguments to pass to the forge test command
 * `foundryTest.enableCodeLens`: Enable or disable CodeLens buttons next to test methods (default: enabled)
 

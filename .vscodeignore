@@ -30,5 +30,6 @@ vsc-extension-quickstart.md
 README.zh-CN.md
 **/*.md
 !README.md
+!README.zh-CN.md
 !CHANGELOG.md
 !LICENSE
