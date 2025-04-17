@@ -23,9 +23,10 @@
 
 ## 安装
 
-1. 在 VSCode 扩展面板中搜索 "Foundry Test Runner"
-2. 点击安装
-3. 重启 VSCode
+1. 从 [VSCode 插件市场](https://marketplace.visualstudio.com/items?itemName=jjeejj.foundry-solidity-test-runner) 安装
+2. 或在 VSCode 扩展面板中搜索 "Foundry Test Runner"
+3. 点击安装
+4. 重启 VSCode
 
 ## 使用方法
 

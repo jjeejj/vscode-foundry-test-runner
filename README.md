@@ -23,9 +23,10 @@ This VSCode extension provides integration support for the Foundry/Forge testing
 
 ## Installation
 
-1. Search for "Foundry Test Runner" in the VSCode extension panel
-2. Click install
-3. Restart VSCode
+1. Install from [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=jjeejj.foundry-solidity-test-runner)
+2. Or search for "Foundry Test Runner" in the VSCode extension panel
+3. Click install
+4. Restart VSCode
 
 ## Usage
 
